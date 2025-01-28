@@ -26,7 +26,7 @@ export const HeroSection = () => {
             <Button 
               size="lg" 
               variant="outline"
-              className="border-white text-white hover:bg-white/10"
+              className="bg-white/10 border-white text-white hover:bg-white/20"
             >
               <Play className="w-4 h-4 mr-2" />
               Watch Demo (2 mins)
