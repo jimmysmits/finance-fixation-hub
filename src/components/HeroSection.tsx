@@ -57,7 +57,7 @@ export const HeroSection = () => {
                 <span>Trial spots remaining</span>
                 <span>35/50 spots left</span>
               </div>
-              <Progress value={70} className="h-2 bg-[#161622]" indicatorClassName="bg-[#00F0FF]" />
+              <Progress value={70} className="h-2 bg-[#161622]" />
             </div>
           </div>
 
@@ -95,8 +95,28 @@ export const HeroSection = () => {
         </div>
 
         <div className="flex justify-center gap-8 mt-12">
-          <img src="https://placehold.co/120x40/161622/00F0FF?text=Forbes" alt="Forbes" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
-          <img src="https://placehold.co/120x40/161622/00F0FF?text=TechCrunch" alt="TechCrunch" className="h-8 opacity-80 hover:opacity-100 transition-opacity" />
+          <div className="flex items-center justify-center gap-12">
+            <div className="group relative">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#00F0FF] to-[#FF4D79] opacity-20 group-hover:opacity-40 transition-opacity rounded-lg blur"></div>
+              <div className="relative bg-[#161622] px-6 py-3 rounded-lg">
+                <img 
+                  src="https://placehold.co/120x40/161622/00F0FF?text=Forbes" 
+                  alt="Forbes" 
+                  className="h-8 opacity-80 group-hover:opacity-100 transition-opacity"
+                />
+              </div>
+            </div>
+            <div className="group relative">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-[#00F0FF] to-[#FF4D79] opacity-20 group-hover:opacity-40 transition-opacity rounded-lg blur"></div>
+              <div className="relative bg-[#161622] px-6 py-3 rounded-lg">
+                <img 
+                  src="https://placehold.co/120x40/161622/00F0FF?text=TechCrunch" 
+                  alt="TechCrunch" 
+                  className="h-8 opacity-80 group-hover:opacity-100 transition-opacity"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
