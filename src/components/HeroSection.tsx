@@ -19,14 +19,14 @@ export const HeroSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-left animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-[#E0E0E0]">
-              Financial
+              Simplify Your
               <br />
               <span className="bg-gradient-to-r from-[#8B5CF6] to-[#D946EF] bg-clip-text text-transparent">
-                Superpowers
+                Freelance Finances
               </span>
             </h1>
             <p className="text-xl text-[#E0E0E0]/80 mb-8">
-              AI-driven wealth building for the digital age
+              All-in-one financial management for freelancers and sole traders. Handle invoices, track expenses, and prepare for tax season with confidence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <Button 
