@@ -28,12 +28,19 @@ export const FeaturesSection = () => {
   return (
     <div className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-900">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-gray-900">
           Everything You Need to Succeed
         </h2>
+        <p className="text-xl text-center mb-12 text-gray-600 max-w-2xl mx-auto">
+          Powerful tools to help you manage your finances with confidence
+        </p>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((feature, index) => (
-            <div key={feature.title} style={{ animationDelay: `${index * 0.1}s` }}>
+            <div 
+              key={feature.title} 
+              className="animate-fade-up"
+              style={{ animationDelay: `${index * 0.1}s` }}
+            >
               <FeatureCard {...feature} />
             </div>
           ))}
