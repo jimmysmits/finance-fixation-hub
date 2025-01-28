@@ -12,11 +12,11 @@ interface PriceCardProps {
 export const PriceCard = ({ title, price, description, features, isPopular }: PriceCardProps) => {
   return (
     <div 
-      className={`p-8 rounded-lg ${
+      className={`p-8 rounded-2xl ${
         isPopular 
-          ? 'bg-primary text-white ring-2 ring-primary shadow-xl' 
-          : 'bg-white hover:shadow-xl'
-      } transition-shadow duration-300 animate-fade-up`}
+          ? 'bg-gradient-to-br from-primary to-[#1E3A5F] text-white ring-2 ring-accent shadow-xl -translate-y-4' 
+          : 'bg-white hover:shadow-xl border border-gray-100'
+      } transition-all duration-300 animate-fade-up`}
     >
       <h3 className="text-2xl font-bold mb-2">{title}</h3>
       <div className="mb-4">
@@ -27,7 +27,7 @@ export const PriceCard = ({ title, price, description, features, isPopular }: Pr
       <ul className="mb-8 space-y-4">
         {features.map((feature) => (
           <li key={feature} className="flex items-center">
-            <Check className="w-5 h-5 mr-2" />
+            <Check className="w-5 h-5 mr-2 flex-shrink-0" />
             <span>{feature}</span>
           </li>
         ))}
@@ -39,7 +39,7 @@ export const PriceCard = ({ title, price, description, features, isPopular }: Pr
             : 'bg-primary text-white hover:bg-primary/90'
         }`}
       >
-        Get Started
+        Start Free Trial
       </Button>
       {isPopular && (
         <div className="flex items-center justify-center gap-2 mt-4 text-blue-100">
