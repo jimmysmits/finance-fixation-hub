@@ -8,7 +8,7 @@ export const HeroSection = () => {
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="text-left animate-fade-up">
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
               Design Your
               <br />
               <span className="bg-gradient-to-r from-accent to-[#FFA726] bg-clip-text text-transparent">
@@ -50,14 +50,35 @@ export const HeroSection = () => {
           </div>
 
           <div className="relative animate-fade-up delay-200">
-            <div className="rounded-2xl overflow-hidden shadow-2xl">
-              <img 
-                src="https://placehold.co/600x400/2A5C8A/FFF?text=Dashboard+Preview"
-                alt="Dashboard Preview"
-                className="w-full h-auto"
-              />
-              <div className="absolute top-1/4 left-1/4 w-24 h-24 border-4 border-accent rounded-full animate-pulse opacity-75" />
+            <div className="rounded-2xl overflow-hidden shadow-2xl bg-white">
+              <div className="bg-primary p-4">
+                <div className="flex items-center gap-2">
+                  <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                  <div className="w-3 h-3 rounded-full bg-green-500"></div>
+                </div>
+              </div>
+              <div className="p-6">
+                <div className="grid grid-cols-2 gap-4 mb-6">
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <div className="text-sm text-gray-600">Total Balance</div>
+                    <div className="text-2xl font-bold text-primary">$24,500</div>
+                    <div className="text-xs text-green-500">+12.5% this month</div>
+                  </div>
+                  <div className="bg-gray-50 p-4 rounded-lg">
+                    <div className="text-sm text-gray-600">Monthly Savings</div>
+                    <div className="text-2xl font-bold text-primary">$1,850</div>
+                    <div className="text-xs text-green-500">+5.2% vs last month</div>
+                  </div>
+                </div>
+                <div className="space-y-3">
+                  <div className="h-4 bg-gray-100 rounded w-full"></div>
+                  <div className="h-4 bg-gray-100 rounded w-3/4"></div>
+                  <div className="h-4 bg-gray-100 rounded w-5/6"></div>
+                </div>
+              </div>
             </div>
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 border-4 border-accent rounded-full animate-pulse opacity-75"></div>
           </div>
         </div>
 
