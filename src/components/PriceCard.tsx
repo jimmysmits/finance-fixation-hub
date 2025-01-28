@@ -1,4 +1,4 @@
-import { Check } from "lucide-react";
+import { Check, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface PriceCardProps {
@@ -29,6 +29,12 @@ export const PriceCard = ({ title, price, description, features, isPopular }: Pr
       <Button className={`w-full ${isPopular ? 'bg-white text-primary hover:bg-gray-100' : 'bg-primary text-white hover:bg-primary/90'}`}>
         Get Started
       </Button>
+      {isPopular && (
+        <div className="flex items-center justify-center gap-2 mt-4 text-blue-100">
+          <Shield className="w-4 h-4" />
+          <span className="text-sm">30-Day Money-Back Guarantee</span>
+        </div>
+      )}
     </div>
   );
 };
