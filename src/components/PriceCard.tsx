@@ -14,7 +14,7 @@ export const PriceCard = ({ title, price, description, features, isPopular }: Pr
     <div 
       className={`p-8 rounded-2xl ${
         isPopular 
-          ? 'bg-gradient-to-br from-primary to-[#1E3A5F] text-foreground ring-2 ring-accent shadow-xl -translate-y-4' 
+          ? 'bg-gradient-to-br from-[#8B5CF6] to-[#D946EF] text-foreground ring-2 ring-accent shadow-xl -translate-y-4' 
           : 'bg-card text-foreground hover:shadow-xl border border-primary/10'
       } transition-all duration-300 animate-fade-up`}
     >
@@ -35,7 +35,7 @@ export const PriceCard = ({ title, price, description, features, isPopular }: Pr
       <Button 
         className={`w-full transform transition-transform hover:scale-105 ${
           isPopular 
-            ? 'bg-accent text-white hover:bg-accent/90' 
+            ? 'bg-background text-foreground hover:bg-background/90' 
             : 'bg-primary text-background hover:bg-primary/90'
         }`}
       >

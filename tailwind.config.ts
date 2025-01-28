@@ -23,17 +23,17 @@ export default {
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "#0A0A0F",
-        foreground: "#F8F9FA", // Lighter text for better contrast
+        foreground: "#F8F9FA",
         primary: {
-          DEFAULT: "#4DEEEA", // More saturated, easier to read cyan
+          DEFAULT: "#8B5CF6", // Rich purple instead of cyan
           foreground: "#0A0A0F",
         },
         secondary: {
-          DEFAULT: "#FF4D79",
+          DEFAULT: "#D946EF", // Soft magenta instead of harsh pink
           foreground: "#0A0A0F",
         },
         accent: {
-          DEFAULT: "#FF4D79",
+          DEFAULT: "#D946EF",
           foreground: "#0A0A0F",
         },
         destructive: {
@@ -41,8 +41,8 @@ export default {
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "#2A2A35", // Darker muted background
-          foreground: "#E0E0E0", // Lighter muted text
+          DEFAULT: "#2A2A35",
+          foreground: "#E0E0E0",
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -50,7 +50,7 @@ export default {
         },
         card: {
           DEFAULT: "#161622",
-          foreground: "#F8F9FA", // Lighter text for better contrast
+          foreground: "#F8F9FA",
         },
       },
       fontFamily: {
