@@ -14,8 +14,8 @@ export const PriceCard = ({ title, price, description, features, isPopular }: Pr
     <div 
       className={`p-8 rounded-2xl ${
         isPopular 
-          ? 'bg-gradient-to-br from-primary to-[#1E3A5F] text-white ring-2 ring-accent shadow-xl -translate-y-4' 
-          : 'bg-white hover:shadow-xl border border-gray-100'
+          ? 'bg-gradient-to-br from-primary to-[#1E3A5F] text-foreground ring-2 ring-accent shadow-xl -translate-y-4' 
+          : 'bg-card text-foreground hover:shadow-xl border border-primary/10'
       } transition-all duration-300 animate-fade-up`}
     >
       <h3 className="text-2xl font-bold mb-2">{title}</h3>
@@ -23,11 +23,11 @@ export const PriceCard = ({ title, price, description, features, isPopular }: Pr
         <span className="text-4xl font-bold">{price}</span>
         <span className="text-sm">/month</span>
       </div>
-      <p className={`mb-6 ${isPopular ? 'text-blue-100' : 'text-gray-600'}`}>{description}</p>
+      <p className={`mb-6 ${isPopular ? 'text-foreground/90' : 'text-foreground/80'}`}>{description}</p>
       <ul className="mb-8 space-y-4">
         {features.map((feature) => (
           <li key={feature} className="flex items-center">
-            <Check className="w-5 h-5 mr-2 flex-shrink-0" />
+            <Check className="w-5 h-5 mr-2 flex-shrink-0 text-primary" />
             <span>{feature}</span>
           </li>
         ))}
@@ -36,13 +36,13 @@ export const PriceCard = ({ title, price, description, features, isPopular }: Pr
         className={`w-full transform transition-transform hover:scale-105 ${
           isPopular 
             ? 'bg-accent text-white hover:bg-accent/90' 
-            : 'bg-primary text-white hover:bg-primary/90'
+            : 'bg-primary text-background hover:bg-primary/90'
         }`}
       >
         Start Free Trial
       </Button>
       {isPopular && (
-        <div className="flex items-center justify-center gap-2 mt-4 text-blue-100">
+        <div className="flex items-center justify-center gap-2 mt-4 text-foreground/90">
           <Shield className="w-4 h-4" />
           <span className="text-sm">30-Day Money-Back Guarantee</span>
         </div>

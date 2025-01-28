@@ -23,9 +23,9 @@ export default {
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "#0A0A0F",
-        foreground: "#E0E0E0",
+        foreground: "#F8F9FA", // Lighter text for better contrast
         primary: {
-          DEFAULT: "#00F0FF",
+          DEFAULT: "#4DEEEA", // More saturated, easier to read cyan
           foreground: "#0A0A0F",
         },
         secondary: {
@@ -41,8 +41,8 @@ export default {
           foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "#2A2A35", // Darker muted background
+          foreground: "#E0E0E0", // Lighter muted text
         },
         popover: {
           DEFAULT: "hsl(var(--popover))",
@@ -50,7 +50,7 @@ export default {
         },
         card: {
           DEFAULT: "#161622",
-          foreground: "#E0E0E0",
+          foreground: "#F8F9FA", // Lighter text for better contrast
         },
       },
       fontFamily: {
