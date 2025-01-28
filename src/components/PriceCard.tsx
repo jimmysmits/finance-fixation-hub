@@ -11,7 +11,13 @@ interface PriceCardProps {
 
 export const PriceCard = ({ title, price, description, features, isPopular }: PriceCardProps) => {
   return (
-    <div className={`p-8 rounded-lg ${isPopular ? 'bg-primary text-white ring-2 ring-primary' : 'bg-white'} shadow-lg animate-fade-up`}>
+    <div 
+      className={`p-8 rounded-lg ${
+        isPopular 
+          ? 'bg-primary text-white ring-2 ring-primary shadow-xl' 
+          : 'bg-white hover:shadow-xl'
+      } transition-shadow duration-300 animate-fade-up`}
+    >
       <h3 className="text-2xl font-bold mb-2">{title}</h3>
       <div className="mb-4">
         <span className="text-4xl font-bold">{price}</span>
@@ -26,7 +32,13 @@ export const PriceCard = ({ title, price, description, features, isPopular }: Pr
           </li>
         ))}
       </ul>
-      <Button className={`w-full ${isPopular ? 'bg-white text-primary hover:bg-gray-100' : 'bg-primary text-white hover:bg-primary/90'}`}>
+      <Button 
+        className={`w-full transform transition-transform hover:scale-105 ${
+          isPopular 
+            ? 'bg-accent text-white hover:bg-accent/90' 
+            : 'bg-primary text-white hover:bg-primary/90'
+        }`}
+      >
         Get Started
       </Button>
       {isPopular && (
